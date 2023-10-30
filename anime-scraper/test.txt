@@ -1,0 +1,20 @@
+guys how to debug these kinds of errors i got this while fetching a url 
+```
+node:internal/deps/undici/undici:11576
+    Error.captureStackTrace(err, this);
+          ^
+
+TypeError: fetch failed
+    at Object.fetch (node:internal/deps/undici/undici:11576:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/indeevar/Personal/frontend/anime-scraper/index.js:23:18 {
+  cause: Error: read ECONNRESET
+      at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20) {
+    errno: -104,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  }
+}
+
+Node.js v18.17.1
+```
